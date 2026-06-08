@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+        --color-clifford: #da373d;
+      }
+    </style>
+</head>
+
+<body>
+    <header class="w-full bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-24 gap-4">
+
+                <a href="#" class="flex items-center gap-4 group shrink-0">
+                    <img src="logo-gro.png" class="w-40 h-16 object-contain" alt="Grossman Plastic Surgery Logo" />
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-4">
+                    <a href="#"
+                        class="text-sm font-medium text-gray-600 hover:text-[#9A7B43] transition-colors">About</a>
+
+                    <div class="relative group">
+                        <button
+                            class="flex items-center gap-1 text-sm font-medium text-gray-600 hover:text-[#9A7B43] transition-colors focus:outline-none">
+                            Surgical
+                            <svg class="w-4 h-4 text-gray-400 group-hover:text-[#9A7B43] transition-transform group-hover:rotate-180"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="absolute left-0 top-full pt-4 hidden group-hover:block z-50">
+                            <div class="w-48 bg-white border border-gray-100 rounded-lg shadow-xl py-2">
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#9A7B43]">Breast</a>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#9A7B43]">Body</a>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#9A7B43]">Face</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative group">
+                        <button
+                            class="flex items-center gap-1 text-sm font-medium text-gray-600 hover:text-[#9A7B43] transition-colors focus:outline-none">
+                            Non-Surgical
+                            <svg class="w-4 h-4 text-gray-400 group-hover:text-[#9A7B43] transition-transform group-hover:rotate-180"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="absolute left-0 top-full pt-4 hidden group-hover:block z-50">
+                            <div class="w-48 bg-white border border-gray-100 rounded-lg shadow-xl py-2">
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#9A7B43]">Injectables</a>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#9A7B43]">Skin
+                                    Rejuvenation</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="text-sm font-medium text-gray-600 hover:text-[#9A7B43] transition-colors">Weight
+                        Management</a>
+                    <a href="#" class="text-sm font-medium text-gray-600 hover:text-[#9A7B43] transition-colors">Payment
+                        Plans</a>
+                    <a href="#"
+                        class="text-sm font-medium text-gray-600 hover:text-[#9A7B43] transition-colors">Media</a>
+                    <a href="#" class="text-sm font-medium text-gray-600 hover:text-[#9A7B43] transition-colors">Contact
+                        Us</a>
+                </nav>
+
+                <div class="hidden md:flex items-center gap-6 shrink-0">
+                    <a href="tel:+22123456789" class="flex items-center gap-3 group">
+                        <div
+                            class="w-10 h-10 rounded-full bg-[#FDFBF7] border border-[#F5EFE6] flex items-center justify-center text-[#9A7B43] group-hover:bg-[#9A7B43] group-hover:text-white transition-all duration-300">
+                            <svg class="w-4 h-4 fill-currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M21.384,17.791l-3.769-2.231c-0.437-0.258-0.989-0.18-1.341,0.185l-1.551,1.614c-2.846-1.48-5.149-3.783-6.63-6.63 l1.614-1.551c0.365-0.352,0.443-0.903,0.185-1.341L7.662,2.069C7.369,1.573,6.812,1.3,6.234,1.3H3.144C2.128,1.3,1.3,2.124,1.3,3.141 c0,10.45,8.509,18.959,18.959,18.959c1.018,0,1.841-0.828,1.841-1.844v-3.14C22.1,18.539,21.827,17.983,21.384,17.791z" />
+                            </svg>
+                        </div>
+                        <span
+                            class="text-sm font-semibold text-[#1E1B4B] tracking-wide group-hover:text-[#9A7B43] transition-colors">(+22)
+                            123 456 789</span>
+                    </a>
+
+                    <a href="#"
+                        class="inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-full text-sm font-medium text-white bg-[#9A7B43] hover:bg-[#836633] shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200">
+                        Book Consultation
+                    </a>
+                </div>
+
+                <div class="flex items-center lg:hidden">
+                    <button type="button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-[#9A7B43] hover:bg-gray-100 focus:outline-none">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <section class="relative w-full min-h-[600px] bg-[#241d57] overflow-hidden flex items-center">
+        <div
+            class="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] rounded-full bg-[#9A7B43] opacity-10 blur-[120px] pointer-events-none">
+        </div>
+        <div
+            class="absolute bottom-[-10%] left-[-10%] w-[400px] h-[400px] rounded-full bg-white opacity-5 blur-[100px] pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 lg:py-24 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#9A7B43]/15 border border-[#9A7B43]/30">
+                        <span class="w-1.5 h-1.5 rounded-full bg-[#E8D1A7] animate-pulse"></span>
+                        <span class="text-xs font-semibold text-[#E8D1A7] tracking-widest uppercase">Elite Aesthetic
+                            Medicine</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-light text-white tracking-tight leading-[1.15]">
+                        Rediscover Your <br class="hidden sm:inline" />
+                        <span class="font-normal italic text-[#E8D1A7]">Natural Elegance</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-gray-200 max-w-xl mx-auto lg:mx-0 font-light leading-relaxed">
+                        Experience world-class surgical precision and advanced non-surgical enhancements tailored
+                        exclusively to your unique aesthetic goals.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#"
+                            class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-full text-sm font-medium text-[#241d57] bg-[#E8D1A7] hover:bg-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200">
+                            Schedule Private Consultation
+                        </a>
+                        <a href="#"
+                            class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-full text-sm font-medium text-white bg-transparent border border-gray-400 hover:border-white hover:bg-white/5 transition-all duration-200">
+                            Explore Payment Plans
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
+
+                    <div
+                        class="group relative bg-white/5 backdrop-blur-sm p-6 rounded-2xl border border-white/10 shadow-sm hover:shadow-md hover:border-white/20 transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 shrink-0 rounded-xl bg-[#E8D1A7]/10 flex items-center justify-center text-[#E8D1A7] group-hover:bg-[#E8D1A7] group-hover:text-[#241d57] transition-colors duration-300">
+                                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M16 3c-.705 0-1.29.378-1.722 1.018-.46-.665-1.036-1.018-1.778-1.018C11.167 3 10 4.167 10 5.5v13.5c0 1.333 1.167 2 2.5 2h.111C13.944 21 15 20.333 15 19V5.5C15 4.167 13.833 3 12.5 3z"
+                                        opacity="0.3" />
+                                    <path d="M8 12h8" opacity="0.2" />
+                                    <path d="M8 16h8" opacity="0.2" />
+                                    <path d="M12 3v18" stroke-width="1" />
+                                    <path d="M19 14l-2 2-1-1v3h3l-1-1 2-2z" fill="currentColor" stroke="none"
+                                        class="opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                                    <path d="M19 14l-3 3"
+                                        class="opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                                </svg>
+                            </div>
+                            <div class="space-y-1">
+                                <h3 class="text-base font-semibold text-white">Surgical Procedures</h3>
+                                <p class="text-xs text-gray-300 leading-relaxed">Advanced breast, body contouring, and
+                                    facial sculpting surgeries.</p>
+                                <a href="#"
+                                    class="inline-flex items-center gap-1 text-xs font-medium text-[#E8D1A7] pt-1 hover:text-white transition-colors">
+                                    View Procedures <span
+                                        class="transform group-hover:translate-x-1 transition-transform">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group relative bg-white/5 backdrop-blur-sm p-6 rounded-2xl border border-white/10 shadow-sm hover:shadow-md hover:border-white/20 transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 shrink-0 rounded-xl bg-[#E8D1A7]/10 flex items-center justify-center text-[#E8D1A7] group-hover:bg-[#E8D1A7] group-hover:text-[#241d57] transition-colors duration-300">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                                </svg>
+                            </div>
+                            <div class="space-y-1">
+                                <h3 class="text-base font-semibold text-white">Non-Surgical Treatments</h3>
+                                <p class="text-xs text-gray-300 leading-relaxed">Medical-grade injectables, fillers, and
+                                    skin rejuvenation treatments.</p>
+                                <a href="#"
+                                    class="inline-flex items-center gap-1 text-xs font-medium text-[#E8D1A7] pt-1 hover:text-white transition-colors">
+                                    Explore Injectables <span
+                                        class="transform group-hover:translate-x-1 transition-transform">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group relative bg-white/5 backdrop-blur-sm p-6 rounded-2xl border border-white/10 shadow-sm hover:shadow-md hover:border-white/20 transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 shrink-0 rounded-xl bg-[#E8D1A7]/10 flex items-center justify-center text-[#E8D1A7] group-hover:bg-[#E8D1A7] group-hover:text-[#241d57] transition-colors duration-300">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                </svg>
+                            </div>
+                            <div class="space-y-1">
+                                <h3 class="text-base font-semibold text-white">Weight Management</h3>
+                                <p class="text-xs text-gray-300 leading-relaxed">Holistic, medically supervised wellness
+                                    and contouring plans.</p>
+                                <a href="#"
+                                    class="inline-flex items-center gap-1 text-xs font-medium text-[#E8D1A7] pt-1 hover:text-white transition-colors">
+                                    Learn More <span
+                                        class="transform group-hover:translate-x-1 transition-transform">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="w-full bg-[#FDFBF7] py-20 lg:py-28 relative overflow-hidden">
+
+        <div
+            class="absolute top-[30%] left-1/2 -translate-x-1/2 w-[800px] h-[300px] rounded-full bg-[#9A7B43] opacity-[0.03] blur-[120px] pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center mb-24">
+
+                <div class="lg:col-span-5 flex justify-center">
+                    <div
+                        class="relative group w-full max-w-[380px] aspect-[4/5] rounded-3xl overflow-hidden shadow-xl shadow-gray-200/50">
+                        <div
+                            class="absolute inset-0 border border-[#9A7B43]/20 rounded-3xl translate-x-3 translate-y-3 group-hover:translate-x-1 group-hover:translate-y-1 transition-transform duration-300 pointer-events-none">
+                        </div>
+
+                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80"
+                            alt="Dr. Peter H. Grossman"
+                            class="w-full h-full object-cover object-top scale-100 group-hover:scale-105 transition-transform duration-500 ease-out" />
+
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-[#1E1B4B]/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="space-y-2">
+                        <span class="text-xs font-semibold text-[#9A7B43] tracking-[0.2em] uppercase block">Best
+                            Cosmetic Plastic Surgeon in San Fernando Valley</span>
+                        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-light text-[#1E1B4B] tracking-tight">
+                            Dr. Peter H. <span class="font-normal text-[#9A7B43]">Grossman</span>
+                        </h2>
+                    </div>
+
+                    <div class="w-16 h-[2px] bg-[#9A7B43]/30 mx-auto lg:mx-0"></div>
+
+                    <div class="space-y-4 text-gray-600 font-light leading-relaxed text-sm sm:text-base">
+                        <p>
+                            <strong class="font-medium text-[#1E1B4B]">Dr. Peter Grossman</strong> was the former
+                            President of the Los Angeles Society of Plastic Surgeons, and is a board-certified plastic
+                            surgeon whose private medical practice is divided between cosmetic and reconstructive
+                            surgery in West Hills, California.
+                        </p>
+                        <p>
+                            The diverse nature of Grossman Plastic Surgery and Dr. Grossman's vast experience make him
+                            one of the most sought-after surgeons in Southern California. The decision to have plastic
+                            surgery can be life-changing and having confidence in your surgeon and their staff is
+                            extremely important. Dr. Grossman has been a reconstructive surgeon for more than 20 years.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4 pt-4 max-w-sm mx-auto lg:mx-0 text-left">
+                        <div class="border-l-2 border-[#9A7B43] pl-4">
+                            <span class="block text-2xl font-semibold text-[#1E1B4B]">20+</span>
+                            <span class="text-xs text-gray-500 uppercase tracking-wider">Years Experience</span>
+                        </div>
+                        <div class="border-l-2 border-[#9A7B43] pl-4">
+                            <span class="block text-2xl font-semibold text-[#1E1B4B]">Board</span>
+                            <span class="text-xs text-gray-500 uppercase tracking-wider">Certified Surgeon</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="border-t border-gray-200/60 pt-16">
+                <div class="text-center max-w-2xl mx-auto mb-10 space-y-2">
+                    <h3 class="text-lg sm:text-xl font-medium text-[#1E1B4B]">A Renowned & Trusted Expert</h3>
+                    <p class="text-xs sm:text-sm text-gray-500 font-light">Dr. Peter Grossman is regularly featured
+                        across major national broadcasting networks.</p>
+                </div>
+
+                <div
+                    class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 items-center justify-items-center opacity-80">
+
+                    <div
+                        class="h-12 flex items-center justify-center filter grayscale contrast-125 opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 ease-in-out cursor-pointer">
+                        <span class="text-xl font-bold tracking-tighter text-[#1E1B4B]">NBC NEWS</span>
+                    </div>
+
+                    <div
+                        class="h-12 flex items-center justify-center filter grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 ease-in-out cursor-pointer">
+                        <span class="text-2xl font-black text-red-600 tracking-tighter">CNN</span>
+                    </div>
+
+                    <div
+                        class="h-12 flex items-center justify-center filter grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 ease-in-out cursor-pointer">
+                        <span class="text-2xl font-bold italic tracking-widest text-[#1E1B4B]">T|L|C</span>
+                    </div>
+
+                    <div
+                        class="h-12 flex items-center justify-center filter grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 ease-in-out cursor-pointer">
+                        <span class="text-sm font-black text-blue-900 uppercase text-center leading-none">Good
+                            Morning<br><span class="text-amber-500">America</span></span>
+                    </div>
+
+                    <div
+                        class="h-12 flex items-center justify-center filter grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 ease-in-out cursor-pointer">
+                        <span class="text-sm font-semibold text-emerald-700 tracking-wide">Discovery Health</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="mt-20 text-center">
+                <div class="inline-block bg-white border border-gray-100 shadow-sm rounded-2xl px-6 py-4">
+                    <p class="text-sm sm:text-base font-medium text-[#1E1B4B]">
+                        We Proudly Offer <span class="text-[#9A7B43] font-semibold">Cosmetic Plastic Surgery</span> &
+                        Advanced <span class="text-[#9A7B43] font-semibold">Aesthetic Med Spa Services</span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="w-full bg-[#F3F4F6] py-20 lg:py-28 relative overflow-hidden text-[#1E1B4B]">
+
+        <div
+            class="absolute top-[-10%] left-[-20%] w-[600px] h-[600px] rounded-full bg-[#9A7B43] opacity-5 blur-[150px] pointer-events-none">
+        </div>
+        <div
+            class="absolute bottom-[-10%] right-[-10%] w-[500px] h-[500px] rounded-full bg-[#1E1B4B] opacity-5 blur-[130px] pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-20">
+
+            <div class="space-y-10">
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-gray-200 pb-6">
+                    <div class="space-y-2">
+                        <span class="text-xs font-semibold text-[#9A7B43] tracking-[0.2em] uppercase block">Advanced
+                            Surgical Artistry</span>
+                        <h2 class="text-3xl sm:text-4xl font-light tracking-tight">Surgical <span
+                                class="font-normal italic text-[#9A7B43]">Procedures</span></h2>
+                    </div>
+                    <p class="text-sm text-gray-500 max-w-md font-light">
+                        Precision-driven surgical treatments sculpted to enhance your structural contours and turn back
+                        the hands of time.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-6">
+
+                    <div
+                        class="group relative lg:col-span-4 h-[420px] rounded-3xl overflow-hidden border border-white shadow-md bg-white transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80"
+                            alt="Face Procedures"
+                            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-[#1E1B4B]/80 via-[#1E1B4B]/30 to-transparent">
+                        </div>
+
+                        <div class="absolute inset-0 p-8 flex flex-col justify-end space-y-3 text-white">
+                            <span
+                                class="w-fit px-3 py-1 text-[10px] uppercase font-semibold tracking-wider bg-white/20 backdrop-blur-md rounded-full border border-white/20 text-[#E8D1A7]">Facial
+                                Sculpting</span>
+                            <h3 class="text-2xl font-medium">Face</h3>
+                            <p
+                                class="text-xs text-gray-200 font-light leading-relaxed opacity-0 group-hover:opacity-100 max-h-0 group-hover:max-h-16 transition-all duration-500 overflow-hidden">
+                                Achieve a more youthful yet natural look with surgical facial procedures designed to
+                                lift and refine.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group relative lg:col-span-8 h-[420px] rounded-3xl overflow-hidden border border-white shadow-md bg-white transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1000&q=80"
+                            alt="Breast Procedures"
+                            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-[#1E1B4B]/80 via-[#1E1B4B]/20 to-transparent">
+                        </div>
+
+                        <div class="absolute inset-0 p-8 flex flex-col justify-end space-y-3 text-white">
+                            <span
+                                class="w-fit px-3 py-1 text-[10px] uppercase font-semibold tracking-wider bg-white/20 backdrop-blur-md rounded-full border border-white/20 text-[#E8D1A7]">Proportional
+                                Balance</span>
+                            <h3 class="text-2xl font-medium">Breast</h3>
+                            <p class="text-xs text-gray-200 font-light leading-relaxed max-w-xl">
+                                Breast augmentation, lift, reconstruction, and reductions are among our most popular and
+                                trusted surgical routines.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group relative lg:col-span-7 h-[400px] rounded-3xl overflow-hidden border border-white shadow-md bg-white transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=800&q=80"
+                            alt="Body Contouring"
+                            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-[#1E1B4B]/80 via-[#1E1B4B]/20 to-transparent">
+                        </div>
+
+                        <div class="absolute inset-0 p-8 flex flex-col justify-end space-y-3 text-white">
+                            <span
+                                class="w-fit px-3 py-1 text-[10px] uppercase font-semibold tracking-wider bg-white/20 backdrop-blur-md rounded-full border border-white/20 text-[#E8D1A7]">Contour
+                                & Definition</span>
+                            <h3 class="text-2xl font-medium">Body</h3>
+                            <p class="text-xs text-gray-200 font-light leading-relaxed max-w-md">
+                                Procedures engineered seamlessly to help you achieve the sculpted, toned, and perfectly
+                                balanced silhouette you look for.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group relative lg:col-span-5 h-[400px] rounded-3xl overflow-hidden border border-white shadow-md bg-white transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=600&q=80"
+                            alt="Surgical Skin"
+                            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-[#1E1B4B]/80 via-[#1E1B4B]/30 to-transparent">
+                        </div>
+
+                        <div class="absolute inset-0 p-8 flex flex-col justify-end space-y-3 text-white">
+                            <span
+                                class="w-fit px-3 py-1 text-[10px] uppercase font-semibold tracking-wider bg-white/20 backdrop-blur-md rounded-full border border-white/20 text-[#E8D1A7]">Resurfacing</span>
+                            <h3 class="text-2xl font-medium">Skin</h3>
+                            <p
+                                class="text-xs text-gray-200 font-light leading-relaxed opacity-0 group-hover:opacity-100 max-h-0 group-hover:max-h-16 transition-all duration-500 overflow-hidden">
+                                Specialized surgical tissue management providing a beautifully sustained and more
+                                refreshed facial footprint.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="space-y-10 pt-10">
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-gray-200 pb-6">
+                    <div class="space-y-2">
+                        <span class="text-xs font-semibold text-[#9A7B43] tracking-[0.2em] uppercase block">Non-Invasive
+                            Advanced MedSpa</span>
+                        <h2 class="text-3xl sm:text-4xl font-light tracking-tight">Aesthetic <span
+                                class="font-normal italic text-[#9A7B43]">Procedures</span></h2>
+                    </div>
+                    <p class="text-sm text-gray-500 max-w-md font-light">
+                        State-of-the-art non-surgical enhancements designed for quick recovery, radiant skin health, and
+                        timeless vitality.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                    <div
+                        class="group relative h-[380px] rounded-3xl overflow-hidden border border-white shadow-md bg-white transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl">
+                        <img src="https://plus.unsplash.com/premium_photo-1668487826892-bf471b01e5ed?q=80&w=812&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Injectables"
+                            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-[#1E1B4B]/80 via-[#1E1B4B]/30 to-transparent">
+                        </div>
+
+                        <div class="absolute inset-0 p-6 flex flex-col justify-end space-y-2 text-white">
+                            <span
+                                class="w-fit px-2.5 py-0.5 text-[9px] uppercase font-semibold tracking-wider bg-white/20 backdrop-blur-md rounded-full border border-white/20 text-[#E8D1A7]">Targeted
+                                Volume</span>
+                            <h3 class="text-xl font-medium">Injectables</h3>
+                            <p
+                                class="text-[11px] text-gray-200 font-light leading-relaxed opacity-0 group-hover:opacity-100 max-h-0 group-hover:max-h-12 transition-all duration-500 overflow-hidden">
+                                Quick, non-invasive wrinkle-smoothing therapies and dermal volume fillers.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group relative h-[380px] rounded-3xl overflow-hidden border border-white shadow-md bg-white transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=500&q=80"
+                            alt="Laser Treatments"
+                            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-[#1E1B4B]/80 via-[#1E1B4B]/30 to-transparent">
+                        </div>
+
+                        <div class="absolute inset-0 p-6 flex flex-col justify-end space-y-2 text-white">
+                            <span
+                                class="w-fit px-2.5 py-0.5 text-[9px] uppercase font-semibold tracking-wider bg-white/20 backdrop-blur-md rounded-full border border-white/20 text-[#E8D1A7]">Laser
+                                Skin Care</span>
+                            <h3 class="text-xl font-medium">Laser Treatments</h3>
+                            <p
+                                class="text-[11px] text-gray-200 font-light leading-relaxed opacity-0 group-hover:opacity-100 max-h-0 group-hover:max-h-12 transition-all duration-500 overflow-hidden">
+                                Safely target blemishes, hyperpigmentation, and uncover a glowing skin texture.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group relative h-[380px] rounded-3xl overflow-hidden border border-white shadow-md bg-white transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=500&q=80"
+                            alt="RF Technology"
+                            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-[#1E1B4B]/80 via-[#1E1B4B]/30 to-transparent">
+                        </div>
+
+                        <div class="absolute inset-0 p-6 flex flex-col justify-end space-y-2 text-white">
+                            <span
+                                class="w-fit px-2.5 py-0.5 text-[9px] uppercase font-semibold tracking-wider bg-white/20 backdrop-blur-md rounded-full border border-white/20 text-[#E8D1A7]">Radiofrequency
+                                Lift</span>
+                            <h3 class="text-xl font-medium">RF Technology</h3>
+                            <p
+                                class="text-[11px] text-gray-200 font-light leading-relaxed opacity-0 group-hover:opacity-100 max-h-0 group-hover:max-h-12 transition-all duration-500 overflow-hidden">
+                                Tighten skin and stimulate natural deep-tissue collagen growth effortlessly.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group relative h-[380px] rounded-3xl overflow-hidden border border-white shadow-md bg-white transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=500&q=80"
+                            alt="Weight Management"
+                            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-[#1E1B4B]/80 via-[#1E1B4B]/30 to-transparent">
+                        </div>
+
+                        <div class="absolute inset-0 p-6 flex flex-col justify-end space-y-2 text-white">
+                            <span
+                                class="w-fit px-2.5 py-0.5 text-[9px] uppercase font-semibold tracking-wider bg-white/20 backdrop-blur-md rounded-full border border-white/20 text-[#E8D1A7]">Holistic
+                                Health</span>
+                            <h3 class="text-xl font-medium">Weight Management</h3>
+                            <p
+                                class="text-[11px] text-gray-200 font-light leading-relaxed opacity-0 group-hover:opacity-100 max-h-0 group-hover:max-h-12 transition-all duration-500 overflow-hidden">
+                                Achieve lasting, guided wellness metrics alongside medical professionals.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="w-full bg-[#0F0C20] py-20 lg:py-28 relative overflow-hidden text-white">
+
+        <div
+            class="absolute top-1/4 left-[-10%] w-[500px] h-[500px] rounded-full bg-[#9A7B43] opacity-10 blur-[130px] pointer-events-none">
+        </div>
+        <div
+            class="absolute bottom-1/4 right-[-10%] w-[400px] h-[400px] rounded-full bg-indigo-600 opacity-10 blur-[120px] pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10">
+                    <svg class="w-4 h-4 text-[#E8D1A7]" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3zm7 10a1 1 0 0 1-2 0 5 5 0 0 1-10 0 1 1 0 0 1-2 0 7 7 0 0 0 6 6.93V21h-3a1 1 0 0 0 0 2h8a1 1 0 0 0 0-2h-3v-2.07A7 7 0 0 0 19 12z" />
+                    </svg>
+                    <span class="text-xs font-semibold text-[#E8D1A7] tracking-widest uppercase">Featured Podcast</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight text-white">
+                    Beauty and the BS <span class="font-normal italic text-[#E8D1A7]">with Dr. Peter Grossman</span>
+                </h2>
+                <p class="text-sm text-gray-400 font-light max-w-xl mx-auto">
+                    Diving deep into the real, raw, good, bad, and ugly truths of cosmetic and reconstructive medicine.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-16">
+
+                <div
+                    class="lg:col-span-4 bg-white/5 backdrop-blur-md rounded-3xl border border-white/10 p-6 space-y-6 lg:sticky lg:top-8">
+                    <div class="relative aspect-square rounded-2xl overflow-hidden shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=600&q=80"
+                            alt="Beauty and the BS Show Art"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent">
+                        </div>
+
+                        <span
+                            class="absolute top-4 left-4 bg-[#E8D1A7] text-[#0F0C20] text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md shadow">New
+                            Episode</span>
+                    </div>
+
+                    <div class="space-y-2">
+                        <h3 class="text-xl font-semibold text-white">Beauty and the BS</h3>
+                        <p class="text-xs text-[#E8D1A7] font-medium">Hosted by Dr. Peter Grossman</p>
+                        <p class="text-xs text-gray-400 font-light leading-relaxed">
+                            Join Dr. Peter Grossman as he hosts candid discussions with modern industry giants,
+                            celebrities, and global medical leaders.
+                        </p>
+                    </div>
+
+                    <a href="#"
+                        class="flex items-center justify-center gap-2 w-full py-4 rounded-xl text-sm font-semibold text-[#0F0C20] bg-[#E8D1A7] hover:bg-white shadow-lg shadow-[#E8D1A7]/5 transform hover:-translate-y-0.5 transition-all duration-200">
+                        <svg class="w-4 h-4 fill-currentColor" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                        Play Latest Episode
+                    </a>
+                </div>
+
+                <div class="lg:col-span-8 space-y-3">
+                    <h4 class="text-xs font-semibold tracking-wider text-gray-400 uppercase mb-4 px-2">Recent Episodes
+                        feed</h4>
+
+                    <div
+                        class="group flex items-center justify-between gap-4 bg-white/[0.02] hover:bg-white/[0.06] border border-white/5 hover:border-white/10 rounded-2xl p-4 sm:p-5 transition-all duration-300 cursor-pointer">
+                        <div class="space-y-1 min-w-0">
+                            <div class="flex items-center gap-3 text-[11px] text-gray-400 font-medium">
+                                <span class="text-[#E8D1A7]">Apr 7, 2025</span>
+                                <span>•</span>
+                                <span>59 Min</span>
+                            </div>
+                            <h5
+                                class="text-sm sm:text-base font-medium text-white group-hover:text-[#E8D1A7] transition-colors truncate pr-4">
+                                New Horizons & New Frontiers: Dr. Alan Stern on Space, Science & the Next Giant Leap
+                            </h5>
+                        </div>
+                        <button
+                            class="w-10 h-10 shrink-0 rounded-full bg-white/5 text-white group-hover:bg-[#E8D1A7] group-hover:text-[#0F0C20] flex items-center justify-center transition-all duration-300">
+                            <svg class="w-4 h-4 fill-currentColor ml-0.5" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div
+                        class="group flex items-center justify-between gap-4 bg-white/[0.02] hover:bg-white/[0.06] border border-white/5 hover:border-white/10 rounded-2xl p-4 sm:p-5 transition-all duration-300 cursor-pointer">
+                        <div class="space-y-1 min-w-0">
+                            <div class="flex items-center gap-3 text-[11px] text-gray-400 font-medium">
+                                <span class="text-[#E8D1A7]">Mar 31, 2025</span>
+                                <span>•</span>
+                                <span>1 Hr 1 Min</span>
+                            </div>
+                            <h5
+                                class="text-sm sm:text-base font-medium text-white group-hover:text-[#E8D1A7] transition-colors truncate pr-4">
+                                AI & Ethics: Navigating the Moral Maze with Dr. Reid Blackman
+                            </h5>
+                        </div>
+                        <button
+                            class="w-10 h-10 shrink-0 rounded-full bg-white/5 text-white group-hover:bg-[#E8D1A7] group-hover:text-[#0F0C20] flex items-center justify-center transition-all duration-300">
+                            <svg class="w-4 h-4 fill-currentColor ml-0.5" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div
+                        class="group flex items-center justify-between gap-4 bg-white/[0.02] hover:bg-white/[0.06] border border-white/5 hover:border-white/10 rounded-2xl p-4 sm:p-5 transition-all duration-300 cursor-pointer">
+                        <div class="space-y-1 min-w-0">
+                            <div class="flex items-center gap-3 text-[11px] text-gray-400 font-medium">
+                                <span class="text-[#E8D1A7]">Mar 25, 2025</span>
+                                <span>•</span>
+                                <span>1 Hr</span>
+                            </div>
+                            <h5
+                                class="text-sm sm:text-base font-medium text-white group-hover:text-[#E8D1A7] transition-colors truncate pr-4">
+                                Beyond Biology: How Tech is Rewriting Human Evolution with Zoltan Istvan
+                            </h5>
+                        </div>
+                        <button
+                            class="w-10 h-10 shrink-0 rounded-full bg-white/5 text-white group-hover:bg-[#E8D1A7] group-hover:text-[#0F0C20] flex items-center justify-center transition-all duration-300">
+                            <svg class="w-4 h-4 fill-currentColor ml-0.5" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div
+                        class="group flex items-center justify-between gap-4 bg-white/[0.02] hover:bg-white/[0.06] border border-white/5 hover:border-white/10 rounded-2xl p-4 sm:p-5 transition-all duration-300 cursor-pointer">
+                        <div class="space-y-1 min-w-0">
+                            <div class="flex items-center gap-3 text-[11px] text-gray-400 font-medium">
+                                <span class="text-[#E8D1A7]">Mar 18, 2025</span>
+                                <span>•</span>
+                                <span>1 Hr 16 Min</span>
+                            </div>
+                            <h5
+                                class="text-sm sm:text-base font-medium text-white group-hover:text-[#E8D1A7] transition-colors truncate pr-4">
+                                The Power of Saying Yes and Embracing Authenticity: A Chat with Comedian Howie Mandel
+                            </h5>
+                        </div>
+                        <button
+                            class="w-10 h-10 shrink-0 rounded-full bg-white/5 text-white group-hover:bg-[#E8D1A7] group-hover:text-[#0F0C20] flex items-center justify-center transition-all duration-300">
+                            <svg class="w-4 h-4 fill-currentColor ml-0.5" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div
+                        class="group flex items-center justify-between gap-4 bg-white/[0.02] hover:bg-white/[0.06] border border-white/5 hover:border-white/10 rounded-2xl p-4 sm:p-5 transition-all duration-300 cursor-pointer">
+                        <div class="space-y-1 min-w-0">
+                            <div class="flex items-center gap-3 text-[11px] text-gray-400 font-medium">
+                                <span class="text-[#E8D1A7]">Mar 10, 2025</span>
+                                <span>•</span>
+                                <span>1 Hr 19 Min</span>
+                            </div>
+                            <h5
+                                class="text-sm sm:text-base font-medium text-white group-hover:text-[#E8D1A7] transition-colors truncate pr-4">
+                                A Conversation with Jay Leno
+                            </h5>
+                        </div>
+                        <button
+                            class="w-10 h-10 shrink-0 rounded-full bg-white/5 text-white group-hover:bg-[#E8D1A7] group-hover:text-[#0F0C20] flex items-center justify-center transition-all duration-300">
+                            <svg class="w-4 h-4 fill-currentColor ml-0.5" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="pt-4 text-center lg:text-left">
+                        <a href="#"
+                            class="inline-flex items-center gap-2 text-xs font-semibold text-[#E8D1A7] hover:text-white transition-colors group">
+                            See More Archived Episodes
+                            <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-12 flex flex-col sm:flex-row items-center justify-center gap-6">
+                <span class="text-xs font-medium tracking-wider text-gray-400 uppercase">Listen Available On</span>
+                <div class="flex flex-wrap items-center justify-center gap-4">
+
+                    <a href="#"
+                        class="flex items-center gap-2 px-5 py-2.5 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl transition-all duration-200">
+                        <span class="text-purple-400 font-semibold text-sm"></span>
+                        <span class="text-xs font-medium text-white">Apple Podcasts</span>
+                    </a>
+
+                    <a href="#"
+                        class="flex items-center gap-2 px-5 py-2.5 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl transition-all duration-200">
+                        <span class="text-emerald-400 text-sm">●</span>
+                        <span class="text-xs font-medium text-white">Spotify</span>
+                    </a>
+
+                    <a href="#"
+                        class="flex items-center gap-2 px-5 py-2.5 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl transition-all duration-200">
+                        <span class="text-cyan-400 text-xs">▲</span>
+                        <span class="text-xs font-medium text-white">Amazon Music</span>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="w-full bg-white py-20 lg:py-28 relative overflow-hidden text-[#1E1B4B]">
+
+        <div
+            class="absolute top-1/4 right-[-10%] w-[500px] h-[500px] rounded-full bg-[#9A7B43] opacity-[0.03] blur-[130px] pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-xs font-semibold text-[#9A7B43] tracking-[0.2em] uppercase block">Clinical Insights &
+                    Trends</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight">
+                    Latest <span class="font-normal italic text-[#9A7B43]">Articles</span>
+                </h2>
+                <div class="w-12 h-[1px] bg-[#9A7B43]/40 mx-auto my-2"></div>
+                <p class="text-xs sm:text-sm text-gray-500 font-light">
+                    Stay informed with up-to-date surgical analysis, aesthetic guidance, and wellness perspectives
+                    curated directly by Grossman Plastic Surgery.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+
+                <article
+                    class="group flex flex-col h-full bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl hover:border-gray-200/80 transition-all duration-300">
+                    <div class="relative w-full aspect-[16/10] overflow-hidden bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=600&q=80"
+                            alt="Peptides in Aesthetic Medicine"
+                            class="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500 ease-out" />
+                        <div
+                            class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-[#1E1B4B] text-[10px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-md shadow-sm">
+                            Aesthetic Med</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow justify-between space-y-4">
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2 text-xs text-gray-400 font-light">
+                                <span>Apr 7, 2025</span>
+                                <span>•</span>
+                                <span>5 Min Read</span>
+                            </div>
+                            <h3
+                                class="text-lg font-medium leading-snug group-hover:text-[#9A7B43] transition-colors line-clamp-2">
+                                Peptides: What They Are, How They Work, and Why They're Gaining Attention
+                            </h3>
+                            <p class="text-xs text-gray-500 font-light leading-relaxed line-clamp-3">
+                                Medications such as semaglutide and tirzepatide have shifted how patients achieve
+                                structural health milestones. While GLP-1 routines offer weight adjustments, significant
+                                reduction transitions surface unique needs in underlying cellular layers...
+                            </p>
+                        </div>
+                        <a href="#"
+                            class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#9A7B43] group-hover:text-[#1E1B4B] transition-colors pt-2">
+                            Read Full Post <span
+                                class="transform group-hover:translate-x-1 transition-transform">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article
+                    class="group flex flex-col h-full bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl hover:border-gray-200/80 transition-all duration-300">
+                    <div class="relative w-full aspect-[16/10] overflow-hidden bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=600&q=80"
+                            alt="Treating Loose Skin"
+                            class="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500 ease-out" />
+                        <div
+                            class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-[#1E1B4B] text-[10px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-md shadow-sm">
+                            Skin Care</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow justify-between space-y-4">
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2 text-xs text-gray-400 font-light">
+                                <span>Mar 31, 2025</span>
+                                <span>•</span>
+                                <span>6 Min Read</span>
+                            </div>
+                            <h3
+                                class="text-lg font-medium leading-snug group-hover:text-[#9A7B43] transition-colors line-clamp-2">
+                                How to Treat Loose Skin: Surgical and Non-Surgical Clinical Options
+                            </h3>
+                            <p class="text-xs text-gray-500 font-light leading-relaxed line-clamp-3">
+                                Loose or sagging skin is a standard concern that develops naturally alongside lifecycle
+                                changes, significant fitness transformations, or environmental exposures. Explore modern
+                                clinical tools equipped to restore targeted tautness...
+                            </p>
+                        </div>
+                        <a href="#"
+                            class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#9A7B43] group-hover:text-[#1E1B4B] transition-colors pt-2">
+                            Read Full Post <span
+                                class="transform group-hover:translate-x-1 transition-transform">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article
+                    class="group flex flex-col h-full bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl hover:border-gray-200/80 transition-all duration-300">
+                    <div class="relative w-full aspect-[16/10] overflow-hidden bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=600&q=80"
+                            alt="Body Contouring"
+                            class="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500 ease-out" />
+                        <div
+                            class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-[#1E1B4B] text-[10px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-md shadow-sm">
+                            Surgical</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow justify-between space-y-4">
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2 text-xs text-gray-400 font-light">
+                                <span>Mar 25, 2025</span>
+                                <span>•</span>
+                                <span>4 Min Read</span>
+                            </div>
+                            <h3
+                                class="text-lg font-medium leading-snug group-hover:text-[#9A7B43] transition-colors line-clamp-2">
+                                Post-Weight-Loss Body Contouring in the Modern GLP-1 Era
+                            </h3>
+                            <p class="text-xs text-gray-500 font-light leading-relaxed line-clamp-3">
+                                Advanced metabolic support technologies have entirely rewritten structural volume
+                                tracking patterns. Discover how strategic aesthetic contour management safely secures
+                                and frames your ultimate structural transformations...
+                            </p>
+                        </div>
+                        <a href="#"
+                            class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#9A7B43] group-hover:text-[#1E1B4B] transition-colors pt-2">
+                            Read Full Post <span
+                                class="transform group-hover:translate-x-1 transition-transform">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article
+                    class="group flex flex-col h-full bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl hover:border-gray-200/80 transition-all duration-300">
+                    <div class="relative w-full aspect-[16/10] overflow-hidden bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80"
+                            alt="Facelift Rejuvenation"
+                            class="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500 ease-out" />
+                        <div
+                            class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-[#1E1B4B] text-[10px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-md shadow-sm">
+                            Surgical</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow justify-between space-y-4">
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2 text-xs text-gray-400 font-light">
+                                <span>Mar 18, 2025</span>
+                                <span>•</span>
+                                <span>7 Min Read</span>
+                            </div>
+                            <h3
+                                class="text-lg font-medium leading-snug group-hover:text-[#9A7B43] transition-colors line-clamp-2">
+                                Facelift vs. Non-Surgical Rejuvenation: Which Option Is Right For You?
+                            </h3>
+                            <p class="text-xs text-gray-500 font-light leading-relaxed line-clamp-3">
+                                Facial lifecycle modifications depend deeply on skin laxity metrics, deep structural
+                                volume shifts, and muscle behavior. Review our breakdown of targeted operative versus
+                                micro-treatment solutions...
+                            </p>
+                        </div>
+                        <a href="#"
+                            class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#9A7B43] group-hover:text-[#1E1B4B] transition-colors pt-2">
+                            Read Full Post <span
+                                class="transform group-hover:translate-x-1 transition-transform">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article
+                    class="group flex flex-col h-full bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl hover:border-gray-200/80 transition-all duration-300">
+                    <div class="relative w-full aspect-[16/10] overflow-hidden bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=600&q=80"
+                            alt="Brazilian Butt Lift Guide"
+                            class="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500 ease-out" />
+                        <div
+                            class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-[#1E1B4B] text-[10px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-md shadow-sm">
+                            Body Contour</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow justify-between space-y-4">
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2 text-xs text-gray-400 font-light">
+                                <span>Mar 10, 2025</span>
+                                <span>•</span>
+                                <span>5 Min Read</span>
+                            </div>
+                            <h3
+                                class="text-lg font-medium leading-snug group-hover:text-[#9A7B43] transition-colors line-clamp-2">
+                                Brazilian Butt Lift (BBL) in Los Angeles: What You Need to Know
+                            </h3>
+                            <p class="text-xs text-gray-500 font-light leading-relaxed line-clamp-3">
+                                The autologous structural transfer continues to rank among the most requested body
+                                contouring choices globally. Known for building natural-looking balance using advanced
+                                fat purification protocols...
+                            </p>
+                        </div>
+                        <a href="#"
+                            class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#9A7B43] group-hover:text-[#1E1B4B] transition-colors pt-2">
+                            Read Full Post <span
+                                class="transform group-hover:translate-x-1 transition-transform">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article
+                    class="group flex flex-col h-full bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl hover:border-gray-200/80 transition-all duration-300">
+                    <div class="relative w-full aspect-[16/10] overflow-hidden bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80"
+                            alt="GLP-1 Weight Loss Insights"
+                            class="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500 ease-out" />
+                        <div
+                            class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-[#1E1B4B] text-[10px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-md shadow-sm">
+                            Weight Mgmt</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow justify-between space-y-4">
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2 text-xs text-gray-400 font-light">
+                                <span>Mar 3, 2025</span>
+                                <span>•</span>
+                                <span>5 Min Read</span>
+                            </div>
+                            <h3
+                                class="text-lg font-medium leading-snug group-hover:text-[#9A7B43] transition-colors line-clamp-2">
+                                How Weight-Loss Medications Are Changing Med Spa Practices
+                            </h3>
+                            <p class="text-xs text-gray-500 font-light leading-relaxed line-clamp-3">
+                                Advanced metabolic protocols have radically reconfigured long-term volume-tracking
+                                behaviors. Learn how integrated cosmetic skincare support plans complement healthy
+                                weight management tracks...
+                            </p>
+                        </div>
+                        <a href="#"
+                            class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#9A7B43] group-hover:text-[#1E1B4B] transition-colors pt-2">
+                            Read Full Post <span
+                                class="transform group-hover:translate-x-1 transition-transform">→</span>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <div
+                class="mt-16 pt-8 border-t border-gray-100 flex items-center justify-between text-xs font-semibold text-gray-400">
+                <a href="#" class="inline-flex items-center gap-1 hover:text-[#9A7B43] transition-colors group">
+                    <span class="transform group-hover:-translate-x-0.5 transition-transform">←</span> Older Entries
+                </a>
+                <div class="flex items-center gap-2 text-gray-500 font-medium">
+                    <span class="text-[#9A7B43] font-bold">1</span>
+                    <span>/</span>
+                    <span>5</span>
+                </div>
+                <a href="#" class="inline-flex items-center gap-1 hover:text-[#9A7B43] transition-colors group">
+                    Newer Entries <span class="transform group-hover:translate-x-0.5 transition-transform">→</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="w-full bg-[#1a1540] py-20 lg:py-28 relative overflow-hidden text-white">
+
+        <div
+            class="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] rounded-full bg-[#9A7B43] opacity-10 blur-[150px] pointer-events-none">
+        </div>
+        <div
+            class="absolute bottom-[-20%] left-[-10%] w-[500px] h-[500px] rounded-full bg-[#241d57] opacity-30 blur-[130px] pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#9A7B43]/15 border border-[#9A7B43]/30 mx-auto lg:mx-0">
+                        <span class="w-1.5 h-1.5 rounded-full bg-[#E8D1A7] animate-pulse"></span>
+                        <span class="text-xs font-semibold text-[#E8D1A7] tracking-widest uppercase">Begin Your
+                            Transformation</span>
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight leading-[1.15]">
+                        Dr. Peter H. Grossman <br />
+                        <span class="font-normal italic text-[#E8D1A7]">Private Consultation</span>
+                    </h2>
+
+                    <div class="w-12 h-[1px] bg-white/20 mx-auto lg:mx-0 my-4"></div>
+
+                    <p class="text-sm sm:text-base text-gray-300 font-light leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Experience the pinnacle of personalized care at Grossman Plastic Surgery. Our dedicated team of
+                        experts is committed to guiding you through every step of your journey towards enhanced
+                        well-being.
+                    </p>
+
+                    <p class="text-sm text-gray-400 font-light leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        By scheduling a consultation, you'll receive tailored advice and insights from top specialists
+                        in the field. Discover how our cutting-edge techniques and compassionate approach can help you
+                        achieve your health and aesthetic goals. Your journey to excellence starts here.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-6">
+                        <a href="#"
+                            class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-xl text-sm font-semibold text-[#1a1540] bg-[#E8D1A7] hover:bg-white shadow-lg shadow-[#E8D1A7]/10 transform hover:-translate-y-0.5 transition-all duration-200 group">
+                            Schedule Appointment Now
+                            <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </a>
+                        <a href="tel:+22123456789"
+                            class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-xl text-sm font-medium text-white bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-200">
+                            Speak to a Specialist
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 relative group flex justify-center lg:justify-end">
+                    <div
+                        class="absolute inset-0 border border-[#E8D1A7]/10 rounded-3xl translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300 pointer-events-none hidden sm:block">
+                    </div>
+
+                    <div
+                        class="relative w-full max-w-[420px] aspect-[4/3] sm:aspect-[5/4] rounded-3xl overflow-hidden shadow-2xl bg-[#241d57] border border-white/10">
+                        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80"
+                            alt="Grossman Premium Consultation Suite"
+                            class="w-full h-full object-cover brightness-[0.75] contrast-105 group-hover:scale-103 transition-transform duration-700 ease-out" />
+
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-[#1a1540]/80 via-transparent to-white/5 pointer-events-none">
+                        </div>
+
+                        <div
+                            class="absolute bottom-4 right-4 bg-[#1a1540]/60 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10 text-[10px] text-gray-300 font-light tracking-wide">
+                            Beverly Hills Surgical Center
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer
+        class="w-full bg-[#0A071B] text-gray-400 font-light text-sm pt-16 pb-8 relative overflow-hidden border-t border-white/5">
+        <div
+            class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[200px] rounded-full bg-[#9A7B43] opacity-[0.03] blur-[100px] pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-12 border-b border-white/5">
+                <nav
+                    class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs font-medium tracking-wide text-gray-300">
+                    <a href="#" class="hover:text-[#E8D1A7] transition-colors">Home</a>
+                    <a href="#" class="hover:text-[#E8D1A7] transition-colors">About</a>
+                    <a href="#" class="hover:text-[#E8D1A7] transition-colors">Surgical Procedures</a>
+                    <a href="#" class="hover:text-[#E8D1A7] transition-colors">Non-Surgical Procedures</a>
+                    <a href="#" class="hover:text-[#E8D1A7] transition-colors">Weight Management</a>
+                    <a href="#" class="hover:text-[#E8D1A7] transition-colors">Promotions</a>
+                </nav>
+
+                <div class="flex items-center gap-4 text-gray-400">
+                    <a href="#"
+                        class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#E8D1A7] hover:text-[#0A071B] transition-all duration-300">
+                        <svg class="w-4 h-4 fill-currentColor" viewBox="0 0 24 24">
+                            <path d="M9 8H7v3h2v9h3v-9h3l.5-3H12V6c0-.88.39-1 1-1h2V2h-3c-2.42 0-4 1.35-4 4v2z" />
+                        </svg>
+                    </a>
+                    <a href="#"
+                        class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#E8D1A7] hover:text-[#0A071B] transition-all duration-300">
+                        <svg class="w-4 h-4 fill-currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+                        </svg>
+                    </a>
+                    <a href="#"
+                        class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#E8D1A7] hover:text-[#0A071B] transition-all duration-300">
+                        <svg class="w-4 h-4 fill-currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+                    <a href="#"
+                        class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#E8D1A7] hover:text-[#0A071B] transition-all duration-300">
+                        <svg class="w-4 h-4 fill-currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.517 3.545 12 3.545 12 3.545s-7.517 0-9.388.508a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.871.508 9.388.508 9.388.508s7.517 0 9.388-.508a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </a>
+                    <a href="#"
+                        class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#E8D1A7] hover:text-[#0A071B] transition-all duration-300">
+                        <svg class="w-3.5 h-3.5 fill-currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 py-16 text-left">
+
+                <div class="space-y-4">
+                    <h3
+                        class="text-xs font-semibold tracking-widest text-white uppercase border-l-2 border-[#E8D1A7] pl-3">
+                        Headquarters</h3>
+                    <div class="space-y-3 text-xs leading-relaxed text-gray-400 font-light">
+                        <p class="font-medium text-gray-300">Grossman Plastic Surgery</p>
+                        <p>
+                            7325 Medical Center Drive, Suite 200<br />
+                            West Hills, CA 91307
+                        </p>
+                        <div class="pt-2 space-y-1">
+                            <p><span class="text-gray-500">Phone:</span> <a href="tel:+18189812050"
+                                    class="hover:text-[#E8D1A7] transition-colors">(818) 981-2050</a></p>
+                            <p><span class="text-gray-500">Fax:</span> <span class="hover:text-gray-300">(818)
+                                    981-2382</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <h3
+                        class="text-xs font-semibold tracking-widest text-white uppercase border-l-2 border-[#E8D1A7] pl-3">
+                        General Info</h3>
+                    <ul class="space-y-2.5 text-xs font-light">
+                        <li><a href="#"
+                                class="hover:text-[#E8D1A7] transition-colors flex items-center gap-1 group"><span
+                                    class="opacity-0 group-hover:opacity-100 transition-opacity text-[#E8D1A7]">›</span>
+                                About Our Practice</a></li>
+                        <li><a href="#"
+                                class="hover:text-[#E8D1A7] transition-colors flex items-center gap-1 group"><span
+                                    class="opacity-0 group-hover:opacity-100 transition-opacity text-[#E8D1A7]">›</span>
+                                Patient Resources</a></li>
+                        <li><a href="#"
+                                class="hover:text-[#E8D1A7] transition-colors flex items-center gap-1 group"><span
+                                    class="opacity-0 group-hover:opacity-100 transition-opacity text-[#E8D1A7]">›</span>
+                                Privacy Policy</a></li>
+                        <li><a href="#"
+                                class="hover:text-[#E8D1A7] transition-colors flex items-center gap-1 group"><span
+                                    class="opacity-0 group-hover:opacity-100 transition-opacity text-[#E8D1A7]">›</span>
+                                Grossman Burn Center</a></li>
+                    </ul>
+                </div>
+
+                <div class="space-y-4">
+                    <h3
+                        class="text-xs font-semibold tracking-widest text-white uppercase border-l-2 border-[#E8D1A7] pl-3">
+                        Surgical Options</h3>
+                    <ul class="space-y-2.5 text-xs font-light">
+                        <li><a href="#"
+                                class="hover:text-[#E8D1A7] transition-colors flex items-center gap-1 group"><span
+                                    class="opacity-0 group-hover:opacity-100 transition-opacity text-[#E8D1A7]">›</span>
+                                Face Sculpture</a></li>
+                        <li><a href="#"
+                                class="hover:text-[#E8D1A7] transition-colors flex items-center gap-1 group"><span
+                                    class="opacity-0 group-hover:opacity-100 transition-opacity text-[#E8D1A7]">›</span>
+                                Breast Augmentation</a></li>
+                        <li><a href="#"
+                                class="hover:text-[#E8D1A7] transition-colors flex items-center gap-1 group"><span
+                                    class="opacity-0 group-hover:opacity-100 transition-opacity text-[#E8D1A7]">›</span>
+                                Body Contouring</a></li>
+                        <li><a href="#"
+                                class="hover:text-[#E8D1A7] transition-colors flex items-center gap-1 group"><span
+                                    class="opacity-0 group-hover:opacity-100 transition-opacity text-[#E8D1A7]">›</span>
+                                Surgical Skin Treatments</a></li>
+                    </ul>
+                </div>
+
+                <div class="space-y-4">
+                    <h3
+                        class="text-xs font-semibold tracking-widest text-white uppercase border-l-2 border-[#E8D1A7] pl-3">
+                        Non-Surgical</h3>
+                    <ul class="space-y-2.5 text-xs font-light">
+                        <li><a href="#"
+                                class="hover:text-[#E8D1A7] transition-colors flex items-center gap-1 group"><span
+                                    class="opacity-0 group-hover:opacity-100 transition-opacity text-[#E8D1A7]">›</span>
+                                Cosmetic Injectables</a></li>
+                        <li><a href="#"
+                                class="hover:text-[#E8D1A7] transition-colors flex items-center gap-1 group"><span
+                                    class="opacity-0 group-hover:opacity-100 transition-opacity text-[#E8D1A7]">›</span>
+                                Advanced Laser Care</a></li>
+                        <li><a href="#"
+                                class="hover:text-[#E8D1A7] transition-colors flex items-center gap-1 group"><span
+                                    class="opacity-0 group-hover:opacity-100 transition-opacity text-[#E8D1A7]">›</span>
+                                Radiofrequency (RF) Tech</a></li>
+                        <li><a href="#"
+                                class="hover:text-[#E8D1A7] transition-colors flex items-center gap-1 group"><span
+                                    class="opacity-0 group-hover:opacity-100 transition-opacity text-[#E8D1A7]">›</span>
+                                Medical Weight Management</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="border-t border-white/5 pt-8 text-center text-[11px] text-gray-500 tracking-wider">
+                <p>Copyright © 2026 - Peter H. Grossman, MD, CA. All rights reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
